@@ -88,7 +88,7 @@ body > .hamburger {
 	border-bottom: 1px solid #b8c7c5 ;
 }
 
-.menu-ul > li > a {
+.menu-ul > li > * {
 	display: block;
 	line-height: 40px;
 	text-decoration: none;
@@ -115,6 +115,10 @@ body > .hamburger {
 		display: inline-block;
 		border-bottom: none;
 	}
+	.menu-ul .dropbtn::after {
+		content: none;
+	}
+	
 }
 
 .hamburger{
