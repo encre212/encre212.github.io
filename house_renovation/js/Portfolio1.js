@@ -1,4 +1,4 @@
-imageDescriptions = {
+var imageDescriptions = {
 	"img/IMG_1284.jpg": "The living room before the knock-through",
 	"img/IMG_1290.jpg": "The old kitchen",
 	"img/1336.jpg": "This shows the living room ceiling supported by props while the beam was being put in",
@@ -21,17 +21,15 @@ imageDescriptions = {
 	"img/bathroom7.jpg": "The completed bathroom",
 	"img/bathroom8.jpg": "New sink",
 	"img/bathroom4.jpg": "The showerhead and the new extractor fan",
-	"img/bathroom9.jpg": "The completed floor",
-	
-	
+	"img/bathroom9.jpg": "The completed floor"	
 } ;
 
 
 function moveToNextImage( element ) {
-	carousel = $( element ).parent() ;
-	currentImage = carousel.children( 'img:visible' ) ;
-	nextImage = currentImage.next( 'img' ) ;
-	if( nextImage.length == 0 ) {
+	var carousel = $( element ).parent() ;
+	var currentImage = carousel.children( 'img:visible' ) ;
+	var nextImage = currentImage.next( 'img' ) ;
+	if( nextImage.length === 0 ) {
 		nextImage = carousel.children( 'img:first' ) ;
 	}
 	currentImage.hide() ;
@@ -41,10 +39,10 @@ function moveToNextImage( element ) {
 }
 
 function moveToPreviousImage( element ) {
-	carousel = $( element ).parent() ;
-	currentImage = carousel.children( 'img:visible' ) ;
-	nextImage = currentImage.prev( 'img' ) ;
-	if( nextImage.length == 0 ) {
+	var carousel = $( element ).parent() ;
+	var currentImage = carousel.children( 'img:visible' ) ;
+	var nextImage = currentImage.prev( 'img' ) ;
+	if( nextImage.length === 0 ) {
 		nextImage = carousel.children( 'img' ).last() ;
 	}
 	currentImage.hide() ;
@@ -54,10 +52,10 @@ function moveToPreviousImage( element ) {
 }
 
 function processFilename( element ) {
-	captionElement = $(element).closest( '.carousel').children( '.caption' ) ;
-	filename = $(element).attr( 'src' ) ;
+	var captionElement = $(element).closest( '.carousel').children( '.caption' ) ;
+	var filename = $(element).attr( 'src' ) ;
 	captionElement.html( imageDescriptions[ filename ] ) ;
-	console.log( filename ) ;
+	/* console.log( filename ) ; */
 }
 
 $( document ).ready( function() {
@@ -67,7 +65,7 @@ $( document ).ready( function() {
 			processFilename( value ) ;
 		}
 	) ;
-})
+}) ;
 
 
 

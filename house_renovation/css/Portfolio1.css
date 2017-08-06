@@ -190,8 +190,6 @@ header {
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	//padding: auto;
-	//position: static;
 }
 
 .row p{
@@ -252,7 +250,7 @@ header {
 
 .carousel button{
 	background-color: rgba(224,255,255,.5);
-	opacity: 50%;
+	opacity: 0.5;
 	font-size: 30px;
 	border: solid 0px rgba(224,255,255,.5);
 	border-radius: 3px;
