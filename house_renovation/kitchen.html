@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>House Renovation</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/Portfolio1.css">
+	<link rel="stylesheet" href="css/dropdown.css">
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/Portfolio1.js"></script>
+<meta name="viewport" content="width=device-width,intial-scale=1.0">
+
+  </head>
+ 
+ <body>
+	
+	 <header>
+		 <h1> Kitchen </h1>
+	 </header>
+	 
+ 	<a href="#menu" class="hamburger"><span></span></a>
+	 
+	<div class="content">
+		 <p>We destroy the kitchen wall, side door, and a small toilet in an old kitchen.
+		 Put the new beam and change the flat to the pitched roof with a VELUX window.</p>		
+	 
+		 <div class = "carousel_container">
+			 <div class="carousel left" id="before"> 
+				<h2>Before</h2>
+				<div class="carousel_images">
+					<button class="left" onclick="moveToPreviousImage(this)" >&#10094;</button>
+			 		<button class="right" onclick="moveToNextImage(this)" >&#10095;</button>
+				 	<img class= "photos" src= "img/IMG_1284.jpg" alt= "kitchen 1">
+				 	<img class= "photos" src= "img/IMG_1290.jpg" alt= "kitchen 2"> 
+				 	<img class= "photos" src= "img/1336.jpg"     alt= "kitchen 3">
+				 	<img class= "photos" src= "img/IMG_1314.jpg" alt= "kitchen 4">
+				 	<img class= "photos" src= "img/IMG_1465.jpg" alt= "kitchen 5">
+				 	<img class= "photos" src= "img/IMG_1432.jpg" alt= "kitchen 6">
+				 	<img class= "photos" src= "img/IMG_1477.jpg" alt= "kitchen 7">
+				 	<img class= "photos" src= "img/IMG_8559.jpg" alt= "kitchen 8">
+				 	<img class= "photos" src= "img/IMG_1497.jpg" alt= "kitchen 9">
+				</div>
+				<span class="caption"></span>
+		 	</div>
+			<div class="carousel right" id="after">
+				<h2>After</h2>
+				<div class="carousel_images">
+					<button class="left" onclick="moveToPreviousImage(this)" >&#10094;</button>
+					<button class="right" onclick="moveToNextImage(this)" >&#10095;</button>
+					<img src= "img/IMG_9213.jpg" alt= "kichen 10">
+					<img src= "img/IMG_9214.jpg" alt= "kichen 11">
+					<img src= "img/IMG_9218.jpg" alt= "kichen 12">
+					<img src= "img/IMG_9219.jpg" alt= "kichen 13">
+					<img src= "img/IMG_9220.jpg" alt= "kichen 14">
+				</div>
+				<span class="caption"></span>
+			</div>
+		</div>
+	</div>
+	
+	<nav class="menu" id="menu">
+		<ul class="menu-ul">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="plans.html">Plans</a></li>
+			<li class="dropdown">
+				<span class="dropbtn">Rooms</span>
+				<div class="dropdown-content">
+					<a href="kitchen.html">Kitchen</a>
+					<a href="bathroom.html">Bathroom</a>
+					<a href="others.html">Other rooms</a>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	
+	 <footer class="footer">
+	         <p>&copy; 2017 f.b. All Rights Reserved.</p>
+	 </footer>
+ </body>
+
+ 
+ </html>

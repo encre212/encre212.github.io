@@ -1,0 +1,347 @@
+/***********************/
+/* default style, to fit small screens & mobile */
+
+html {
+	height: 100%;
+	width: 100vw;
+}
+
+body{
+    font-family: "Times New Roman";
+    font-size: 20px;
+    line-height: 1.42857143;
+    color: #ffeb3b;
+    background-color: #3f51b5;
+	 text-align: center;
+	 min-height: 100%;
+	 position: relative ;
+	 margin: 0;
+	 box-sizing: border-box;
+	 padding-top: 80px;
+	 padding-bottom: 75px;
+	 padding-left: 8px;
+	 padding-right: 8px;
+}
+
+body > nav {
+	position: absolute;
+	left: 0;
+	right: 0;
+	min-height: 40px;
+	background-color: white;
+}
+
+a{
+	color: #ffeb3b;
+}
+
+@media screen and (min-width: 820px) {
+	body > nav {
+		background-color: transparent;
+	}
+}
+
+
+
+body > .hamburger {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+.menu {
+	font-family: "Times New Roman", "Helvetica";
+	padding-top: 40px;
+	/*transform: translate3d(0, 0%, 0);*/
+	transform: translate3d(0, 0, 0);
+	transition: transform 0.4s linear;
+	z-index: 1;
+	bottom: 100%;
+}
+
+.menu.active {
+	/* transform: translate3d(0, 100%, 0); */
+	transform: translate3d(0, 100%, 0);
+}
+
+@media screen and (min-width: 820px) {
+	.menu,
+	.menu.active {
+		padding-top: 0;
+		transform: translate3d(0, 0, 0);
+	}
+	.menu {
+		top: 0;
+		bottom: auto;
+		transition: none;
+	}
+}
+
+
+.menu-ul {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.menu-ul > li {
+	display: block;
+	border-bottom: 1px solid #b8c7c5 ;
+}
+
+.menu-ul > li > a {
+	display: block;
+	line-height: 40px;
+	text-decoration: none;
+	font-family: "Georgia" ;
+}
+
+.menu-ul *{
+	color: #111111;
+}
+	
+.menu-ul a {
+	color: #ff9800;
+}
+
+.menu-ul .dropbtn {
+	position: relative ;
+}
+.menu-ul .dropbtn::after {
+	content: ':';
+}
+
+@media screen and (min-width: 820px) {
+	.menu-ul > li {
+		display: inline-block;
+		border-bottom: none;
+	}
+}
+
+.hamburger{
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	z-index: 2;
+	position: relative;
+}
+
+.hamburger.on {
+	/* Style when menu is open */
+	
+}
+
+.hamburger span,
+.hamburger span::before,
+.hamburger span::after{
+	display: block;
+	width: 100%;
+	height: 4px;
+	background-color: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	transition:background 0.4s linear;
+}
+
+.hamburger span{
+	position: relative ;
+}
+
+.hamburger.on span,
+.hamburger.on span::before,
+.hamburger.on span::after{
+	background-color: black;
+}
+
+
+.hamburger span::after{
+	position: absolute ;
+	content: '';
+	top: 16px ;
+}
+
+.hamburger span::before{
+	position: absolute ;
+	content: '';
+	top: 8px ;
+}
+
+
+
+
+
+h1{
+	font-style: italic;
+	color: #fffafa;
+	margin-top: 0;
+}
+
+h2{
+	color: #000000;
+}
+
+header {
+	/*margin-top: 80px ;*/
+}
+.content {
+	width: 90vw;
+	/* max-width: 500px; */
+	text-align: center;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	//padding: auto;
+	//position: static;
+}
+
+.row p{
+	font-size: 20px;
+	color: #ffeb3b;
+}
+
+.carousel_container {
+	display: block;
+	position: relative ;
+	width: 100% ;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.carousel.left::after {
+	content: '';
+	clear:both;
+}
+
+.carousel {
+	font-size: 18px;
+	color: #b0c4de;
+	display: inline-block ;
+	position: relative;
+	/*float: left ;*/
+	width: 80vw;
+	max-width: 400px;
+}
+
+.carousel_images {
+	position: relative;
+}
+
+.carousel_container::after {
+	content: '' ;
+	position: relative ;
+	clear: both ;
+	display: block;
+}
+
+.carousel img {
+	display: inline-block;
+	display: none;
+	z-index: 0;
+	width: 80vw ;
+	height: 80vw;
+	max-width: 400px;
+	max-height: 400px;
+	margin-left: auto ;
+	margin-right: auto ;
+}
+
+.carousel img:first-of-type{
+	display: inline-block;
+}
+
+.carousel button{
+	background-color: rgba(224,255,255,.5);
+	opacity: 50%;
+	font-size: 30px;
+	border: solid 0px rgba(224,255,255,.5);
+	border-radius: 3px;
+	position: absolute;
+	min-height: 10%;
+	width: 10%;
+}
+
+.carousel button.left{
+	top: 45%;
+	left: 0%;
+	z-index: 10;
+}
+
+.carousel button.right{
+	top: 45%;
+	right: 0%;
+	z-index: 10;
+}
+
+.plan{
+	width: 80%;
+}
+
+.caption {
+	min-height: 100px;
+	display: inline-block;
+	clear:both ;
+}
+/**********************/
+/* style for larger screens */
+@media only screen and (min-width: 820px) {
+	.content{
+		max-width: 820px;	
+	}
+	
+	.plan{
+		width: 80vw;
+		max-width: 820px;
+	}
+	
+	.hamburger{
+		display: none;
+	}
+	
+	.menu{
+		display: block;
+	}
+	
+	body{
+		background-color: #2196f3;
+		font-size: 20px;
+	}
+
+	.carousel_container {
+		display: block;
+		position: relative ;
+		width: 820px ;
+		height: 500px ;
+	}
+
+	.carousel {
+		font-size: 18px;
+		color: #b0c4de;
+		display: block ;
+		position: absolute ;
+		width: 80%;
+		max-width: 400px;
+		
+	}
+
+	.carousel.left {
+		left: 0px ;
+	}
+	.carousel.right {
+		right: 0px;
+	}
+}
+
+footer{
+	font-size: 15px;
+	font-style: italic;
+	height: 75px;
+	text-align: center;
+	line-height: 75px;
+	position: absolute;
+	bottom: 0px;
+	left: 0 ;
+	right: 0 ;
+}
+
+

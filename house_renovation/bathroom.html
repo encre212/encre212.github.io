@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>House Renovation</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/Portfolio1.css">
+	<link rel="stylesheet" href="css/dropdown.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/Portfolio1.js"></script>
+	<meta name="viewport" content="width=device-width,intial-scale=1.0">
+</head>
+ 
+<body>
+	<header>
+		<h1> Bathroom </h1>
+	</header>
+
+	<a href="#menu" class="hamburger"><span></span></a>
+
+	<div class="content">
+		<p>
+		We decided to change the original layout making more space at first. 
+		There was a 1.7m bathtub across the wall, which occupied almost the whole bathroom. We decided to put 
+		a shorter bathtub below the window, and put a sink against the wall with a big mirror above it. 
+		</p>
+
+		<div class = "carousel_container">
+			<div class="carousel left" id="before"> 
+				<h2>Before</h2>
+				<div class="carousel_images">
+					<button class="left" onclick="moveToPreviousImage(this)" >&#10094;</button>
+					<button class="right" onclick="moveToNextImage(this)" >&#10095;</button>
+					<img class= "photos" src= "img/bathroom_before.jpg" alt= "bathroom">
+					<img class= "photos" src= "img/bathroom1.jpg" alt= "bathroom">
+					<img class= "photos" src= "img/bathroom2.jpg" alt= "bathroom"> 
+					<img class= "photos" src= "img/bathroom3.jpg" alt= "bathroom">
+					<img class= "photos" src= "img/bathroom5.jpg" alt= "bathroom">
+				</div>	
+				<span class="caption"></span>
+			</div>
+			<div class="carousel right" id="after">
+				<h2>After</h2>
+				<div class="carousel_images">
+					<button class="left" onclick="moveToPreviousImage(this)" >&#10094;</button>
+					<button class="right" onclick="moveToNextImage(this)" >&#10095;</button>
+					<img class= "photos" src= "img/bathroom7.jpg" alt= "bathroom">
+					<img class= "photos" src= "img/bathroom8.jpg" alt= "bathroom">
+					<img class= "photos" src= "img/bathroom4.jpg" alt= "bathroom">
+					<img class= "photos" src= "img/bathroom9.jpg" alt= "bathroom">
+				</div>
+				<span class="caption"></span>
+			</div>
+		</div>
+	</div>
+
+	<nav class="menu" id="menu">
+	<ul class="menu-ul">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="plans.html">Plans</a></li>
+	<li class="dropdown">
+	<span class="dropbtn">Rooms</span>
+	<div class="dropdown-content">
+	<a href="kitchen.html">Kitchen</a>
+	<a href="bathroom.html">Bathroom</a>
+	<a href="others.html">Other rooms</a>
+	</div>
+	</li>
+	</ul>
+	</nav>
+
+	<footer class="footer">
+	<p>&copy; 2017 f.b. All Rights Reserved.</p>
+	</footer>
+</body>
+</html>
